@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #445175;
+  --tbbg-color: #3d486c;
+  --inputbg-color: #364061;
+  --border-color:#5e698b;
+  --inputText: whitesmoke;
+  --text-color: #dfdfef;
+  --caseText: #ff9d00;
+  --deathText: #f64e63;
+  --recoverText:#529f84;
+  --btn-color: #d0d0d7;
+  --btn-yellow:#ffb641;
+  --btnText-color:var(--border-color);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+header {
+  position: relative;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 3.125rem 0;
+  color: var(--text-color);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin-bottom: 2.1875rem;
+}
+.search-bar #myinput {
+  border-radius: 0.625rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--inputbg-color);
+  padding: 0 0.625rem;
+  color: var(--inputText);
+  margin-right: 0.625rem;
+  height: 1.875rem;
+}
+.search-bar .btn {
+  padding: 0 0.625rem;
+  border-radius: 0.625rem;
+}
+
+.btn-yellow {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0;
+}
+.btn-yellow .btn-last {
+  font-size: 1rem;
+  padding: 0.25rem 1.125rem;
+  margin-bottom: 0.3125rem;
+  border-radius: 0.375rem;
+  color: var(--btnText-color);
+  background-color: var(--btn-yellow);
+  border: 1px solid var(--btn-yellow);
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table #tb1, .table #tb2 {
+  width: 90%;
+  margin: 0.9375rem;
+}
+.table table, .table th, .table td {
+  border: 2px solid var(--border-color);
+  padding: 0.9375rem;
+  width: 11.25rem;
+  text-align: center;
+  color: var(--text-color);
+  border-collapse: collapse;
+}
+.table th {
+  font-size: 0.875rem;
+  background-color: var(--bg-color);
+}
+.table td {
+  background-color: var(--inputbg-color);
+}
+
+#country {
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#country span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+#cases {
+  color: var(--caseText);
+  font-weight: 600;
+}
+
+#deaths {
+  color: var(--deathText);
+  font-weight: 600;
+}
+
+#recovered {
+  color: var(--recoverText);
+  font-weight: 600;
+}
+
+#active {
+  color: var(--inputText);
+  font-weight: 600;
+}
+
+.text {
+  margin: 1.25rem;
+  color: #9397a1;
+}
+
+/*# sourceMappingURL=style.css.map */

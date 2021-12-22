@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --bg-color: #445175;
+    --tbbg-color: #3d486c;
+    --inputbg-color: #364061;
+    --border-color:#5e698b;
+    --inputText: whitesmoke;
+    --text-color: #dfdfef;
+    --caseText: #ff9d00;
+    --deathText: #f64e63;
+    --recoverText:#529f84;
+    --btn-color: #d0d0d7;
+    --btn-yellow:#ffb641;
+    --btnText-color:var(--border-color);
+}

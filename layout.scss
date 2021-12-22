@@ -1,0 +1,18 @@
+@use './base';
+@use "sass:math";
+@function rem($pixels, $context: 16) {
+	@return (math.div($pixels, $context)) * 1rem;
+}
+body {
+    background-color: var(--bg-color);
+}
+header {
+    position: relative;
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: rem(40);
+        margin: rem(50) 0;
+        color: var(--text-color);
+    }    
+}

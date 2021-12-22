@@ -1,0 +1,39 @@
+@use './base';
+@use "sass:math";
+@function rem($pixels, $context: 16) {
+	@return (math.div($pixels, $context)) * 1rem;
+}
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin-bottom: rem(35);
+    #myinput {
+        border-radius: rem(10);
+        border: 1px solid var(--border-color);
+        background-color: var(--inputbg-color);
+        padding: 0 rem(10) ;
+        color: var(--inputText);
+        margin-right: rem(10);
+        height: rem(30);
+        
+    }
+    .btn {
+        padding: 0 rem(10);
+        border-radius: rem(10);
+    }
+}
+.btn-yellow {
+    display: flex;
+    justify-content: center;
+    margin: rem(20) 0;
+    .btn-last {
+        font-size: rem(16);
+        padding: rem(4) rem(18);
+        margin-bottom: rem(5);
+        border-radius: rem(6);
+        color: var(--btnText-color);
+        background-color: var(--btn-yellow);
+        border: 1px solid var(--btn-yellow);
+    }
+}

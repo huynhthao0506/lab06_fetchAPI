@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tra cứu dữ liệu nCovid-19</title>
+</head>
+<body>
+    <header>
+        <h1>Tra cứu dữ liệu nCovid-19</h1>
+        <div class="search-bar">
+            <input type="text" name="input-place" id="myinput" placeholder="Nhập mã/tên quốc gia">
+            <button class="btn">Xem</button>
+        </div>
+        <section class="table">
+            <div class="table1">
+                <table id="tb1">
+                    <tr>
+                        <th>Quốc gia</th>
+                        <th>Số ca nhiễm</th>
+                        <th>Số ca nhiễm hôm nay</th>
+                        <th>Số ca chết</th>
+                        <th>Số ca chết hôm nay</th>
+                        <th>Số ca hồi phục</th>
+                        <th>Đang đièu trị</th>
+                    </tr>
+                    <tr>
+                        <td id="country"></td>
+                        <td id="cases"></td>
+                        <td id="todayCases"></td>
+                        <td id="deaths"></td>
+                        <td id="todayDeaths"></td>
+                        <td id="todayRecovered"></td>
+                        <td id="active"></td>
+                    </tr>
+                </table>
+            
+                <div class="text">
+                    <p>*Viêt Nam chung tay chống dịch nCovid-19 cùng thế giới</p>
+                </div>
+            </div>
+            <div class="table2">
+                <table id="tb2"></table>
+            </div>
+            <div class="btn-yellow">
+                <button class="btn-last">Xem thêm</button>
+            </div>  
+        </section>
+    </header>
+<script src="./script.js"></script>    
+</body>
+</html>
